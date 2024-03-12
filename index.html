@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="/src/input.css" rel="stylesheet">
+
+    <title>Login form | Created by Talha</title>
+</head>
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-[url('/bg-2.webp')] bg-cover bg-center bg-no-repeat bg-fixed">
+        <div class="px-12 py-10 mt-4 border-2 border-pink-400 text-left bg-transparent  shadow-lg rounded-lg" style="backdrop-filter: blur(8px)">
+          <h3 class="text-3xl font-bold text-center text-white">Login</h3>
+          <form action="/login" method="post">
+            <div class="mt-4">
+              <label class="block">
+                <span class="text-white">Email</span>
+                <input type="email" name="email" required class="block w-72 mt-1 bg-transparent border-pink-500 border-b-2 shadow-sm active:hidden" />
+              </label>
+            </div>
+            <div class="mt-6">
+              <label class="block">
+                <span class="text-white">Password</span>
+                <input type="password" name="password" required class=" block w-72  mt-1 bg-transparent border-pink-500 border-b-2 shadow-sm" />
+              </label>
+            </div>
+            <div class="mt-6">
+              <button type="submit" class="w-full inline-flex items-center justify-center  bg-transparent border border-transparent rounded-md font-semibold text-base text-white uppercase tracking-widest">
+                Sign in
+              </button>
+              <span class=" w-full text-white inline-flex items-center justify-center px-4 py-2 bg-transparent border border-transparent text-sm hover:underline cursor-pointer">Forgotten password?</span>
+            <hr class="my-2 border-pink-500 ">
+            <button class=" w-full inline-flex text-center justify-center text-white  font-bold py-2 px-3 ">Create New Account</button>
+        <span class="w-full -mx-80 text-white absolute -bottom-7"> <span class="font-bold  hover:underline">Create a Page  </span> for a celebrity, brand or business.</span> 
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
